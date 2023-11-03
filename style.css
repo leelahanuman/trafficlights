@@ -1,0 +1,47 @@
+.Container {
+    text-align: center;
+    background-color: #86d2f2;
+    height: 80vh;
+}
+.heading {
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 50px;
+    Text-align: center;
+}
+.traffic-lights {
+    background-color: #1f1d41;
+    height: 260px;
+    width: 90px;
+    padding: 25px;
+    border-radius: 30px;
+    margin-left:55px;
+}
+.button {
+    background-color: #1f1d41;
+    color: white;
+    width: 70px;
+    height: 40px;
+    border-radius: 10px;
+}
+.stopl{
+    background-color: #4b5069;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+.gol{
+    background-color: #4b5069;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+.waitl{
+    background-color: #4b5069;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-top: 35px;
+}
+

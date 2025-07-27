@@ -1,33 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Trafficlights</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traffic Lights</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="Container">
-      <h1 class="heading">Traffic Lights</h1>
-      <div class="d-flex justify-content-center">
-        <div class="mr-5">
-          <button class="button mt-4" id="stopButton" onClick="buttonA()">
-            Stop</button
-          ><br />
-          <button class="button mt-5" id="goButton" onClick="buttonB()">
-            GO</button
-          ><br />
-          <button class="button mt-5" id="readyButton" onClick="buttonC()">
+    <div class="container text-center mt-5">
+      <h1 class="mb-4">Traffic Lights</h1>
+      <div class="d-flex justify-content-center align-items-start gap-5">
+        
+        <!-- Control Buttons -->
+        <div class="d-flex flex-column align-items-center">
+          <button class="btn btn-danger mb-3" id="stopButton" onclick="buttonA()" aria-label="Stop">
+            Stop
+          </button>
+          <button class="btn btn-success mb-3" id="goButton" onclick="buttonB()" aria-label="Go">
+            Go
+          </button>
+          <button class="btn btn-warning" id="readyButton" onclick="buttonC()" aria-label="Ready">
             Ready
           </button>
         </div>
-        <div class="traffic-lights">
-          <div class="stopl" id="stopLight"></div>
-          <div class="gol mt-5 " id="goLight"></div>
-          <div class="waitl mt-5" id="readyLight"></div>
+
+        <!-- Traffic Light Display -->
+        <div class="traffic-lights d-flex flex-column align-items-center">
+          <div class="stopl mb-3" id="stopLight"></div>
+          <div class="gol mb-3" id="goLight"></div>
+          <div class="waitl" id="readyLight"></div>
         </div>
       </div>
     </div>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
     <script src="script.js"></script>
   </body>
 </html>
